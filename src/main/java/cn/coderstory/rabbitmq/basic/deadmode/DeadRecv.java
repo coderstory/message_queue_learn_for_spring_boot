@@ -12,7 +12,7 @@ import java.io.IOException;
 @Component("20")
 public class DeadRecv {
     private final ConnectionUtil connectionUtil;
-    private final static String QUEUE_NAME = "a_queue_name4";
+    private final static String QUEUE_NAME = "dead_target_queue";
 
     public DeadRecv(ConnectionUtil connectionUtil) {
         this.connectionUtil = connectionUtil;
