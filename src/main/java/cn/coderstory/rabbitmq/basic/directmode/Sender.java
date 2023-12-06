@@ -11,8 +11,8 @@ import java.util.concurrent.TimeoutException;
 @Component("15")
 public class Sender {
     private final ConnectionUtil connectionUtil;
-    private final static String EXCHANGE_NAME = "EXCHANGE_NAME1";
-    private final static String QUEUE_NAME = "fanout_exchange_queue_1";
+    private final static String EXCHANGE_NAME = "DIRECT_EXCHANGE";
+    private final static String QUEUE_NAME = "direct_exchange_queue";
 
     public Sender(ConnectionUtil connectionUtil) {
         this.connectionUtil = connectionUtil;

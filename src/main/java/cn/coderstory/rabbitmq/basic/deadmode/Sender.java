@@ -13,7 +13,7 @@ import java.util.concurrent.TimeoutException;
 @Component("23")
 public class Sender {
     private final ConnectionUtil connectionUtil;
-    private final static String QUEUE_NAME = "rev";
+    private final static String QUEUE_NAME = "dead_queue";
 
     public Sender(ConnectionUtil connectionUtil) {
         this.connectionUtil = connectionUtil;

@@ -14,8 +14,8 @@ import java.io.IOException;
 @Component("18")
 public class Recv2 {
     private final ConnectionUtil connectionUtil;
-    private final static String EXCHANGE_NAME = "EXCHANGE_NAME2";
-    private final static String QUEUE_NAME = "queue_2";
+    private final static String EXCHANGE_NAME = "TOPIC_EXCHANGE";
+    private final static String QUEUE_NAME = "topic_queue_2";
 
     public Recv2(ConnectionUtil connectionUtil) {
         this.connectionUtil = connectionUtil;

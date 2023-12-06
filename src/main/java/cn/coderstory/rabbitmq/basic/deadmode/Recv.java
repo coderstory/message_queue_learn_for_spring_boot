@@ -16,7 +16,7 @@ import java.util.Map;
 @Component("22")
 public class Recv {
     private final ConnectionUtil connectionUtil;
-    private final static String QUEUE_NAME = "rev";
+    private final static String QUEUE_NAME = "dead_queue";
 
     public Recv(ConnectionUtil connectionUtil) {
         this.connectionUtil = connectionUtil;

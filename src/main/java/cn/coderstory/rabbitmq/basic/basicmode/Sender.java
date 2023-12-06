@@ -11,7 +11,7 @@ import java.util.concurrent.TimeoutException;
 @Component("3")
 public class Sender {
     private final ConnectionUtil connectionUtil;
-    private final static String QUEUE_NAME = "a_queue_name";
+    private final static String QUEUE_NAME = "basic_mode_queue";
 
     public Sender(ConnectionUtil connectionUtil) {
         this.connectionUtil = connectionUtil;

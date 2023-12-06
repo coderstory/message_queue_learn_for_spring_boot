@@ -12,7 +12,7 @@ import java.util.stream.IntStream;
 @Component("7")
 public class Sender {
     private final ConnectionUtil connectionUtil;
-    private final static String QUEUE_NAME = "test_work_queue";
+    private final static String QUEUE_NAME = "work_queue";
 
     public Sender(ConnectionUtil connectionUtil) {
         this.connectionUtil = connectionUtil;
@@ -26,7 +26,7 @@ public class Sender {
             IntStream.range(1, 20).parallel().forEach(value -> {
                 try {
                     String msg = value + "  this is a message";
-                    channel.basicPublish("", "QUEUE_NAME", build,msg.getBytes());
+                    channel.basicPublish("", QUEUE_NAME, build,msg.getBytes());
                     System.out.println(" [生产者] Sent '" + msg + "'");
                 } catch (IOException e) {
                     throw new RuntimeException(e);
