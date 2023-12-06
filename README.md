@@ -1,8 +1,18 @@
 ## RabbitMQ
 
+### 安装
+
+
+
 ### **模式**
 
-
+>下载地址: https://www.rabbitmq.com/download.html
+>
+> 开启管理页:  rabbitmq-plugins enable rabbitmq_management (sbin目录)  需要重启服务
+> 
+> 默认帐户密码：guest/guest
+> 
+> docker: ```docker run -d --name rabbitmq -p 5671:5671 -p 5672:5672 -p 4369:4369 -p 25672:25672 -p 15671:15671 -p 15672:15672 rabbitmq:management```
 
 创建服务器连接
 ```java

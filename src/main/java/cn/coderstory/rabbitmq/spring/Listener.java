@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class Listener {
     @RabbitListener(bindings = @QueueBinding(
-            value = @Queue(value = "spring.test.queue", durable = "false"),
+            value = @Queue(value = "spring.test.queue", durable = "true"),
             exchange = @Exchange(
                     value = "spring.test.exchange",
                     type = ExchangeTypes.TOPIC
