@@ -31,6 +31,13 @@ public class RabbitmqApplication {
         System.out.println("Received message: " + message + " from partition: " + partition);
     }
 
+    // 消费消息 重复消费
+    @KafkaListener(topics = "myTopic", groupId = "your-group-id2")
+    public void consumeMessage2(@Payload String message, @Header(KafkaHeaders.RECEIVED_PARTITION_ID) int partition) {
+        System.out.println("Received message 2: " + message + " from partition: " + partition);
+    }
+
+
 
     public static void main(String[] args) {
         SpringApplication.run(RabbitmqApplication.class, args);
