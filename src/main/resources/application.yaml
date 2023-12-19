@@ -1,6 +1,4 @@
 spring:
-  rabbitmq:
-    host: 127.0.0.1
-    username: coderstory
-    password: 123456
-    virtual-host: /
+  kafka:
+    consumer:
+      group-id: your-group-id
